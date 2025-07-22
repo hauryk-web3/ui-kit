@@ -3,17 +3,17 @@
     <label v-if="label" class="input-label">{{ label }}</label>
     <div class="input-inner">
       <slot name="prependIcon" />
-      
-      <input
-        :type="type || 'text'"
-        :value="modelValue"
-        @input="onInput"
-        :placeholder="placeholder"
-        class="input-field"
-      />
-      
-      <slot name="appendIcon" />
-  </div>
+        
+        <input
+          :type="type || 'text'"
+          :value="modelValue"
+          @input="onInput"
+          :placeholder="placeholder"
+          class="input-field"
+        />
+        
+        <slot name="appendIcon" />
+    </div>
   </div>
   <div v-if="errorMessage" class="input-error-message">{{ errorMessage }}</div>
 </template>

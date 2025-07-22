@@ -8,7 +8,7 @@
 </template>
 
 <script setup lang="ts">
-import { ref, defineProps } from 'vue';
+import { defineProps } from 'vue';
 
 const sizeMap = {
   small: 16,
