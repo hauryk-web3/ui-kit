@@ -7,15 +7,24 @@ yarn-error.log*
 pnpm-debug.log*
 lerna-debug.log*
 
-node_modules
-dist
-dist-ssr
+# Dependency directories
+node_modules/
+
+# Production builds
+dist/
+dist-ssr/
+storybook-static/
+
+# Local env files
 *.local
+.env
+.env.local
+.env.*.local
 
 # Editor directories and files
-.vscode/*
+.vscode/
 !.vscode/extensions.json
-.idea
+.idea/
 .DS_Store
 *.suo
 *.ntvs*
@@ -23,5 +32,27 @@ dist-ssr
 *.sln
 *.sw?
 
-*storybook.log
-storybook-static
+# Cache and temp files
+.cache/
+*.tsbuildinfo
+*.tmp/
+.temp/
+out/
+coverage/
+
+# Storybook logs and output
+*.storybook.log
+.storybook/out/
+
+# MacOS files
+.AppleDouble
+.LSOverride
+
+# Thumbnails
+._*
+
+# Files that might appear in builds or caches
+.vite/
+.vitepress/
+.svelte-kit/
+

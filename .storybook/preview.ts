@@ -1,15 +1,11 @@
-import type { Preview } from '@storybook/vue3-vite'
+import type { Preview } from '@storybook/vue3';
 import '../src/styles/index.scss';
 
 const preview: Preview = {
   parameters: {
-    controls: {
-      matchers: {
-       color: /(background|color)$/i,
-       date: /Date$/i,
-      },
-    },
+    actions: { argTypesRegex: "^on[A-Z].*" },
+    controls: { expanded: true },
   },
-};
+}
 
-export default preview;
+export default preview
